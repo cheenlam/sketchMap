@@ -219,10 +219,6 @@ img {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  .listBox li:hover .listImg div {
-    -webkit-box-shadow: 0 0 15px #9e9028;
-            box-shadow: 0 0 15px #9e9028;
-  }
   .listBox li:hover .listImg span:nth-child(1) {
     -webkit-animation: flash_01 1s infinite linear;
             animation: flash_01 1s infinite linear;
@@ -283,7 +279,6 @@ img {
   max-width: 150px;
   padding: 0 10px 5px;
   position: relative;
-  -webkit-box-reflect: below -50px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,51 +293,10 @@ img {
   transition: .3s;
 }
 
-.listBox .listImg span {
-  z-index: 2;
-  position: absolute;
-  display: block;
-}
-
-.listBox .listImg span:nth-child(1) {
-  width: 100%;
-  height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#9e9028));
-  background: linear-gradient(90deg, transparent, #9e9028);
-  top: 0;
-  left: -100%;
-}
-
-.listBox .listImg span:nth-child(2) {
-  width: 2px;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#9e9028));
-  background: linear-gradient(180deg, transparent, #9e9028);
-  top: -100%;
-  right: 0;
-}
-
-.listBox .listImg span:nth-child(3) {
-  width: 100%;
-  height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#9e9028));
-  background: linear-gradient(270deg, transparent, #9e9028);
-  bottom: 0;
-  right: -100%;
-}
-
-.listBox .listImg span:nth-child(4) {
-  width: 2px;
-  height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#9e9028));
-  background: linear-gradient(360deg, transparent, #9e9028);
-  bottom: -100%;
-  left: 0;
-}
-
 .showImg {
   width: 100%;
   height: 100vh;
+  padding: 0 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -361,7 +315,7 @@ img {
 .showImg .close {
   width: 100%;
   height: 100%;
-  background-color: rgba(131, 126, 126, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -369,81 +323,9 @@ img {
 
 .showImg .content {
   width: 100%;
-  max-width: 350px;
-  height: calc(100vh - 80px);
+  max-width: 400px;
+  height: calc(100vh - 30px);
   position: relative;
   background: no-repeat center / contain;
-}
-
-@-webkit-keyframes flash_01 {
-  0% {
-    left: -100%;
-  }
-  50%, 100% {
-    left: 100%;
-  }
-}
-
-@keyframes flash_01 {
-  0% {
-    left: -100%;
-  }
-  50%, 100% {
-    left: 100%;
-  }
-}
-
-@-webkit-keyframes flash_02 {
-  0% {
-    top: -100%;
-  }
-  50%, 100% {
-    top: 100%;
-  }
-}
-
-@keyframes flash_02 {
-  0% {
-    top: -100%;
-  }
-  50%, 100% {
-    top: 100%;
-  }
-}
-
-@-webkit-keyframes flash_03 {
-  0% {
-    right: -100%;
-  }
-  50%, 100% {
-    right: 100%;
-  }
-}
-
-@keyframes flash_03 {
-  0% {
-    right: -100%;
-  }
-  50%, 100% {
-    right: 100%;
-  }
-}
-
-@-webkit-keyframes flash_04 {
-  0% {
-    bottom: -100%;
-  }
-  50%, 100% {
-    bottom: 100%;
-  }
-}
-
-@keyframes flash_04 {
-  0% {
-    bottom: -100%;
-  }
-  50%, 100% {
-    bottom: 100%;
-  }
 }
 /*# sourceMappingURL=all.css.map */

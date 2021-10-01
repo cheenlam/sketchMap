@@ -84,11 +84,7 @@ img{
                     &:hover{
                         transform: scale(1.02);
                     }
-        
-                    &:hover .listImg div{
-                        box-shadow: 0 0 15px #9e9028;
-                    }
-        
+    
                     &:hover .listImg span{
                         &:nth-child(1){
                             animation: flash_01 1s infinite linear;
@@ -135,49 +131,11 @@ img{
                     max-width: 150px; 
                     padding: 0 10px 5px;
                     position: relative;
-                    -webkit-box-reflect: below -50px linear-gradient(transparent,rgba(0, 0, 0, 0.5));
                     overflow: hidden;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     transition: .3s;
-                }
-        
-                span{
-                    z-index: 2;
-                    position: absolute;
-                    display: block;
-                    
-                    &:nth-child(1) {
-                        width: 100%;
-                        height: 2px;
-                        background: linear-gradient(90deg,transparent,#9e9028);
-                        top: 0;
-                        left: -100%;
-                    }
-                     &:nth-child(2){
-                        width: 2px;
-                        height: 100%;
-                        background: linear-gradient(180deg,transparent,#9e9028);
-                        top: -100%;
-                        right: 0;
-                    }
-                    
-                     &:nth-child(3){
-                        width: 100%;
-                        height: 2px;
-                        background: linear-gradient(270deg,transparent,#9e9028);
-                        bottom: 0;
-                        right: -100%;
-                    }
-                    
-                     &:nth-child(4){
-                        width: 2px;
-                        height: 100%;
-                        background: linear-gradient(360deg,transparent,#9e9028);
-                        bottom: -100%;
-                        left: 0;
-                    }
                 }
             }
         }
@@ -186,6 +144,7 @@ img{
     @at-root .showImg{
         width: 100%;
         height: 100vh;
+        padding: 0 10px;
         position: fixed;
         top: 0;
         left: 0;
@@ -196,37 +155,18 @@ img{
         .close{
             width: 100%;
             height: 100%;
-            background-color: rgba(131, 126, 126, 0.5);
+            background-color: rgba(255, 255, 255, 0.7);
             position: absolute;
             top: 0;
             left: 0;
         }
         .content{
             width: 100%;
-            max-width: 350px;
-            height: calc(100vh - 80px);
+            max-width: 400px;
+            height: calc(100vh - 30px);
             position: relative;
             background:no-repeat center / contain;       
         }
     }
 }
-
-@keyframes flash_01 {
-    0%{left: -100%;} 
-    50%,100%{left: 100%;} 
-}
-@keyframes flash_02{
-    0%{top: -100%;} 
-    50%,100%{top: 100%;} 
- }
-
- @keyframes flash_03 {
-    0%{right: -100%;} 
-    50%,100%{right: 100%;} 
- }
-
- @keyframes flash_04 {
-    0%{bottom: -100%;} 
-    50%,100%{bottom: 100%;} 
- }
 
