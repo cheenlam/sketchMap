@@ -32,8 +32,7 @@
             </div>
         </div>
 
-        <div class="showImg" v-show="showImg.switch">
-            <div class="close" @click="showImg.switch = false"></div>
+        <div class="showImg" v-show="showImg.switch" @click="showImg.switch = false">
             <div class="content" :style="getbgi()"></div>
         </div>
     </div>
