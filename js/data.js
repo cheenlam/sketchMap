@@ -9,6 +9,7 @@ const listData = [
     { title: '首頁輪播圖 (第3組)', img: 'images/list/index03.jpg' },
     { title: '已登入', img: 'images/list/Signin.jpg' },
     { title: '已登入首頁(下拉選單)', img: 'images/list/menu.jpg' },
+    { title: '新聞內頁', img: 'images/list/Inside-page.jpg' },
     { title: '關於我們', img: 'images/list/about.jpg' },
     { title: '我的', img: 'images/list/mine.jpg' },
     { title: '會員登入', img: 'images/list/login.jpg' },
@@ -30,4 +31,7 @@ const listData = [
     { title: '遊戲', img: 'images/list/playGame.jpg' },
     { title: '討論區', img: 'images/list/forum.jpg' },
     { title: 'app分享', img: 'images/list/app.jpg' },
+   
 ]
+
+// Inside-page
