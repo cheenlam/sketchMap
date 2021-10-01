@@ -22,9 +22,13 @@ var listData = [
     { title: '收件箱', img: 'images/list/mail-box.jpg' },
     { title: '收件箱>信件內容', img: 'images/list/mail-box-a.jpg' },
     { title: '收件箱>寄件箱', img: 'images/list/mail-send.jpg' },
+    { title: '主旨類型', img: 'images/list/mail-send-week.jpg' },
     { title: '賽事', img: 'images/list/Match.jpg' },
     { title: '廣告', img: 'images/list/event.jpg' },
     { title: '遊戲', img: 'images/list/playGame.jpg' },
     { title: '討論區', img: 'images/list/forum.jpg' },
     { title: 'app分享', img: 'images/list/app.jpg' },
 ]
+
+
+// mail-send-week

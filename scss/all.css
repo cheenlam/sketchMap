@@ -186,6 +186,16 @@ img {
   overflow: hidden;
 }
 
+@media screen and (max-width: 520px) {
+  .listBox li > div {
+    padding: 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: radial-gradient(circle at 50% -30%, black, #2f3e72 50%, #1a1616);
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .listBox li {
     width: calc(100% / 4);
@@ -219,22 +229,6 @@ img {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  .listBox li:hover .listImg span:nth-child(1) {
-    -webkit-animation: flash_01 1s infinite linear;
-            animation: flash_01 1s infinite linear;
-  }
-  .listBox li:hover .listImg span:nth-child(2) {
-    -webkit-animation: flash_02 1s .25s infinite linear;
-            animation: flash_02 1s .25s infinite linear;
-  }
-  .listBox li:hover .listImg span:nth-child(3) {
-    -webkit-animation: flash_03 1s .5s infinite linear;
-            animation: flash_03 1s .5s infinite linear;
-  }
-  .listBox li:hover .listImg span:nth-child(4) {
-    -webkit-animation: flash_04 1s .75s infinite linear;
-            animation: flash_04 1s .75s infinite linear;
-  }
 }
 
 .listBox p {
@@ -253,12 +247,23 @@ img {
     width: 100%;
     padding: 15px 5px;
     border: none;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1rem;
   }
 }
 
 .listBox .listImg {
   height: 100%;
-  padding: 5px 0 50px;
+  padding: 10px 0 10px;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), #333);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,26 +276,37 @@ img {
 
 @media screen and (max-width: 520px) {
   .listBox .listImg {
-    display: none;
+    width: 60%;
+    height: 80px;
+    padding: 0px;
+    border-radius: 5px;
+    opacity: 0.8;
+    background: transparent;
   }
 }
 
 .listBox .listImg div {
   max-width: 150px;
-  padding: 0 10px 5px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media screen and (max-width: 520px) {
+  .listBox .listImg img {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
 }
 
 .showImg {

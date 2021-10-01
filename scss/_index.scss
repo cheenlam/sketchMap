@@ -57,6 +57,12 @@ img{
                     border:2px solid transparent;
                     border-image:linear-gradient(45deg,rgb(150, 138, 202),rgb(165, 170, 98), rgb(150, 138, 202)) 20 ;
                     overflow: hidden;
+
+                    @include rwd(520){
+                        padding: 5px 0;
+                        display: flex;
+                        background: radial-gradient(circle at 50% -30%,rgb(0, 0, 0),rgb(47, 62, 114) 50%,rgb(26, 22, 22));  
+                    }  
                 }
         
                 @include rwd(1250){
@@ -74,7 +80,6 @@ img{
                 @include rwd(520){
                     width: 100%;
                     padding: 0 5px;
-        
                     &+li{
                         margin-top: 5px;
                     }
@@ -83,21 +88,6 @@ img{
                 @include hover{
                     &:hover{
                         transform: scale(1.02);
-                    }
-    
-                    &:hover .listImg span{
-                        &:nth-child(1){
-                            animation: flash_01 1s infinite linear;
-                        }
-                        &:nth-child(2){
-                            animation: flash_02 1s .25s infinite linear;
-                        }
-                        &:nth-child(3){
-                            animation: flash_03 1s .5s infinite linear;
-                        }
-                        &:nth-child(4){
-                            animation: flash_04 1s .75s infinite linear;
-                        }
                     }
                 }
             }
@@ -113,29 +103,45 @@ img{
                 @include rwd(520){
                     width: 100%;
                     padding: 15px 5px;
-                    border:none;      
+                    border:none;   
+                    background: transparent;   
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1rem;
                 }
             }
         
             .listImg{
                 height: 100%;
-                padding: 5px 0 50px;
+                padding: 10px 0 10px;
                 background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),#333);
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
                 @include rwd(520){
-                    display: none;
+                   width: 60%;
+                   height: 80px;
+                   padding: 0px;
+                   border-radius: 5px;
+                   opacity: 0.8;
+                   background: transparent;
+                  
                 }  
                 div{
                     max-width: 150px; 
-                    padding: 0 10px 5px;
                     position: relative;
                     overflow: hidden;
                     display: flex;
-                    align-items: center;
+                    align-items: start;
                     justify-content: center;
                     transition: .3s;
+                   
+                }
+                img{
+                    @include rwd(520){
+                        transform: translateY(-20%);
+                    }
                 }
             }
         }
