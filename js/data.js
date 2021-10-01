@@ -17,6 +17,7 @@ var listData = [
     { title: '日曆展開', img: 'images/list/calendar.jpg' },
     { title: '修改登入/取款密碼', img: 'images/list/account-change-Password.jpg' },
     { title: '纪錄查詢', img: 'images/list/account-wallist.jpg' },
+    { title: '查詢項目', img: 'images/list/member_list.jpg' },
     { title: '轉贈點數', img: 'images/list/account-wallist2.jpg' },
     { title: '最新消息', img: 'images/list/news.jpg' },
     { title: '收件箱', img: 'images/list/mail-box.jpg' },
@@ -29,6 +30,3 @@ var listData = [
     { title: '討論區', img: 'images/list/forum.jpg' },
     { title: 'app分享', img: 'images/list/app.jpg' },
 ]
-
-
-// mail-send-week
