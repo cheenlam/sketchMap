@@ -1,4 +1,5 @@
-var listData = [
+const title = "APP版";
+const listData = [
     { title: 'lodding', img: 'images/list/loding.jpg' },
     { title: '安裝說明', img: 'images/list/Installnotes.jpg' },
     { title: '彈跳視窗(每日遊戲)', img: 'images/list/DailyGame.jpg' },

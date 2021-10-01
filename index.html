@@ -8,12 +8,12 @@
     <script src="js/vue_3.2.19.js"></script>
     <script src="js/data.js?1.0.0"></script>
     <link rel="stylesheet" href="scss/all.css?1.0.0">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
     <div class="indexBox" id="indexBox">
         <div class="main">
-            <div class="title">APP版</div>
+            <div class="title">{{title}}</div>
             <div class="listBox">
                 <ul>
                     <li v-for="(item,index) in list" @click="show(item.img)">
@@ -40,6 +40,7 @@
             data() {
                 return {
                     list: listData,
+                    title: title,
                     showImg: {
                         switch: false,
                         img: 'images/list/loding.jpg'
@@ -55,7 +56,9 @@
                     return `background-image: url(${this.showImg.img})`;
                 },
             },
-            mounted() {},
+            mounted() {
+                document.title = this.title;
+            },
         }).mount("#indexBox");
     </script>
 </body>
