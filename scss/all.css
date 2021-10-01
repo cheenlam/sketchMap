@@ -186,16 +186,6 @@ img {
   overflow: hidden;
 }
 
-@media screen and (max-width: 520px) {
-  .listBox li > div {
-    padding: 5px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: radial-gradient(circle at 50% -30%, black, #2f3e72 50%, #1a1616);
-  }
-}
-
 @media screen and (max-width: 1250px) {
   .listBox li {
     width: calc(100% / 4);
@@ -211,16 +201,6 @@ img {
 @media screen and (max-width: 780px) {
   .listBox li {
     width: calc(100% / 2);
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .listBox li {
-    width: 100%;
-    padding: 0 5px;
-  }
-  .listBox li + li {
-    margin-top: 5px;
   }
 }
 
@@ -242,25 +222,6 @@ img {
   border-bottom: 2px solid #E3E3E3;
 }
 
-@media screen and (max-width: 520px) {
-  .listBox p {
-    width: 100%;
-    padding: 15px 5px;
-    border: none;
-    background: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1rem;
-  }
-}
-
 .listBox .listImg {
   height: 100%;
   padding: 10px 0 10px;
@@ -272,17 +233,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-}
-
-@media screen and (max-width: 520px) {
-  .listBox .listImg {
-    width: 60%;
-    height: 80px;
-    padding: 0px;
-    border-radius: 5px;
-    opacity: 0.8;
-    background: transparent;
-  }
 }
 
 .listBox .listImg div {
@@ -302,10 +252,9 @@ img {
   transition: .3s;
 }
 
-@media screen and (max-width: 520px) {
-  .listBox .listImg img {
-    -webkit-transform: translateY(-20%);
-            transform: translateY(-20%);
+@media screen and (max-width: 780px) {
+  .listBox .listImg div {
+    padding: 0 10px;
   }
 }
 
