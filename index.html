@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue_3.2.19.js"></script>
+    <script src="js/data.js"></script>
+    <link rel="stylesheet" href="scss/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="indexBox" id="indexBox">
+        <div class="main">
+            <div class="title">APP版</div>
+            <div class="listBox">
+                <ul>
+                    <li v-for="(item,index) in list" @click="show(item.img)">
+                        <div>
+                            <p>{{item.title}}</p>
+                            <div class="listImg">
+                                <div>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img :src="item.img" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="showImg" v-show="showImg.switch">
+            <div class="close" @click="showImg.switch = false"></div>
+            <div class="content" :style="getbgi()"></div>
+        </div>
+    </div>
+
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    list: listData,
+                    showImg: {
+                        switch: false,
+                        img: 'images/list/loding.jpg'
+                    }
+                };
+            },
+            methods: {
+                show(data) {
+                    this.showImg.switch = true;
+                    this.showImg.img = data;
+                },
+                getbgi(data) {
+                    return `background-image: url(${this.showImg.img})`;
+                },
+            },
+            mounted() {},
+        }).mount("#indexBox");
+    </script>
+</body>
+
+</html>

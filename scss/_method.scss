@@ -1,0 +1,13 @@
+// 判斷是否能hover(手機或Pc)
+@mixin hover {
+    @media (any-hover: hover) {
+        @content;
+    }
+}
+
+// rwd
+@mixin rwd($data){
+    @media screen and (max-width: #{$data}px){
+        @content;
+    }
+}
