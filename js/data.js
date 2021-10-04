@@ -1,7 +1,6 @@
 const title = "APP版";
 const listData = [
     { title: 'lodding', img: 'images/list/loding.jpg' },
-    { title: '安裝說明', img: 'images/list/Installnotes.jpg' },
     { title: '彈跳視窗(每日遊戲)', img: 'images/list/DailyGame.jpg' },
     { title: '彈跳視窗(註冊贈點)', img: 'images/list/Roulette.jpg' },
     { title: '首頁輪播圖 (第1組)', img: 'images/list/index01.jpg' },
@@ -31,7 +30,8 @@ const listData = [
     { title: '遊戲', img: 'images/list/playGame.jpg' },
     { title: '討論區', img: 'images/list/forum.jpg' },
     { title: 'app分享', img: 'images/list/app.jpg' },
-   
+    { title: '連結下載', img: 'images/list/Install.jpg' },
+    { title: '安裝說明', img: 'images/list/Installnotes.jpg' }, 
 ]
 
 // Inside-page
